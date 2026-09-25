@@ -1,6 +1,6 @@
 FROM python:3.12-slim-bookworm
 
-# Updated Dockerfile with pinned Java and sbt versions
+# Updated Dockerfile with pinned Java & sbt versions
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
