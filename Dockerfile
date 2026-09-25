@@ -30,7 +30,7 @@ ENV SDKMAN_DIR="/root/.sdkman" \
 
 RUN curl -s "https://get.sdkman.io" | bash \
     && source "$SDKMAN_DIR/bin/sdkman-init.sh" \
-    && sdk install java java 8.0.502-tem \
+    && sdk install java 8.0.502-tem \
     && sdk install sbt 1.13.0 \
     && ln -s "$SDKMAN_DIR/candidates/sbt/current/bin/sbt"   /usr/local/bin/sbt \
     && ln -s "$SDKMAN_DIR/candidates/java/current/bin/java" /usr/local/bin/java
